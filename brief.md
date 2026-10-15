@@ -21,10 +21,19 @@ Android isolates applications within a sandbox and restricts sensitive resources
 Resource: Request runtime permissions - https://developer.android.com/training/permissions/requesting
 
 ## Networking
+DNS over HTTPS (DoH), standardized in RFC 8484, transports DNS queries and responses through encrypted HTTPS connections. It helps prevent local network observers from reading DNS requests or modifying them in transit to a trusted resolver. However, DoH does not hide queries from the resolver, conceal destination IP addresses, or provide complete anonymity. The service must therefore combine trusted DNS resolution with HTTPS security and appropriate privacy controls.
+
+Resource: RFC 8484 - DNS Queries over HTTPS (DoH) - https://www.rfc-editor.org/rfc/rfc8484
 
 ## Cybersecurity
+Phishing-resistant authentication cryptographically binds authentication to the legitimate verifier or protected communication channel, preventing attackers from successfully reusing captured authentication outputs at fraudulent websites. FIDO2/WebAuthn security keys and properly implemented multi-factor passkeys qualify; certificate-based smart cards using authenticated TLS can also qualify. SMS codes, email codes, and manually entered authenticator-app OTPs are not phishing-resistant because attackers can relay them during real-time phishing attacks.
+
+Resource: NIST SP 800-63B - Authentication and Authenticator Management - https://pages.nist.gov/800-63-4/sp800-63b/authenticators/
 
 ## Data
+Oman's Personal Data Protection Law, Royal Decree 6/2022, as amended by Royal Decree 68/2026, requires applicable processing to follow lawful, transparent practices, including consent unless an exception applies. Controllers and processors must implement appropriate safeguards and respect applicable data-subject rights and retention requirements. Importantly, Article 3 exempts certain government processing performed within statutory powers. The authority must therefore establish whether its specific activities fall within an exemption before determining its obligations.
+
+Resource: Royal Decree 6/2022 Issuing the Personal Data Protection Law (Consolidated) - https://decree.om/2022/l20220006/
 
 ## Misconception in My Track
 
