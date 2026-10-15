@@ -36,5 +36,8 @@ Oman's Personal Data Protection Law, Royal Decree 6/2022, as amended by Royal De
 Resource: Royal Decree 6/2022 Issuing the Personal Data Protection Law (Consolidated) - https://decree.om/2022/l20220006/
 
 ## Misconception in My Track
+A common misconception is that OAuth 2.0 alone is a complete user authentication protocol. In reality, OAuth 2.0 primarily delegates access to protected resources; an access token does not automatically establish the identity of the person using an application. OpenID Connect adds standardized authentication capabilities, including ID Tokens containing identity claims. Section 1.1, "OpenID Connect Core 1.0 Overview," explains that OIDC is an identity layer built on OAuth 2.0. For a national single sign-on platform, confusing authorization with authentication could cause applications to accept inappropriate tokens as proof of login, creating security vulnerabilities.
+
 
 ## Open Question
+How should the authority design and test an OpenID Connect session-management and logout strategy that securely coordinates authentication across multiple government applications while minimizing the risk of token theft, session hijacking, and unintended access?
